@@ -19,7 +19,3 @@ parser.add_argument(
     help='provide a report name',
     required=True,
 )
-
-# data = parser.parse_args()
-# files = data.files
-# report_type = data.report
