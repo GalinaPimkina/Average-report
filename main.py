@@ -36,3 +36,18 @@ def get_products_data(files: list):
                 products_data[row['name']] = {'brand': row['brand'], 'price': int(row['price']), 'rating': float(row['rating'])}
 
     return products_data
+
+
+def get_brand_rating_data(data: dict):
+    rating_dct = {}
+
+    for product in data:
+        brand = data[product]['brand']
+        rating = data[product]['rating']
+
+        if brand not in rating_dct:
+            rating_dct[brand] = []
+
+        rating_dct[brand].append(rating)
+
+    return rating_dct
