@@ -11,3 +11,12 @@ def write_report_to_csv_file(data: dict):
         for key in data:
             writer.writerow({"": i, "brand": key, "rating": data[key]})
             i += 1
+
+
+def read_report_from_csv_file(file):
+    with open(file, newline='') as csvfile:
+        lst = []
+        reader = csv.DictReader(csvfile)
+        for row in reader:
+            lst.append(row)
+        return lst
