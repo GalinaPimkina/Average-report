@@ -11,7 +11,7 @@
 <img width="1176" height="406" alt="1" src="https://github.com/user-attachments/assets/66a18062-0911-4080-81ef-1541047c26e3" />
 
 Если пользователь ввел что-то не так, вылезет исключение.
-<img width="1101" height="265" alt="изображение" src="https://github.com/user-attachments/assets/f60f2b68-53e1-4417-92aa-e9dac9d06720" />
+<img width="1099" height="261" alt="изображение" src="https://github.com/user-attachments/assets/eb06c919-5b15-4c46-b266-952795dc317f" />
 <img width="1126" height="260" alt="изображение" src="https://github.com/user-attachments/assets/eac1b5ad-8ce1-4836-b4c3-bb9845fa3d72" />
 
 В программе предусмотрено создание 2 видов отчетов:
