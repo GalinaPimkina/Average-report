@@ -1,9 +1,10 @@
 def get_items_for_rating(report_type: str) -> tuple:
-    # в зависимости от требуемого рейтинга нужно только дописать сюда if с нужными 2 параметрами
+    # в зависимости от требуемого рейтинга нужно только дописать
+    # сюда if с нужными 2 параметрами
     if report_type == 'average_rating':
         return 'brand', 'rating'
-    # if report_type == 'average_price':
-    #     return 'brand', 'price'
+    if report_type == 'average_price':
+        return 'brand', 'price'
 
 
 def get_data_for_rating(data: dict, report_type: str) -> dict:
@@ -24,7 +25,8 @@ def get_data_for_rating(data: dict, report_type: str) -> dict:
 
 
 def average_rating(data: dict, report_type: str) -> dict:
-    # вычисление среднего рейтинга для каждого из брендов, результат отсортирован по убыванию
+    # вычисление среднего рейтинга для каждого из брендов,
+    # результат отсортирован по убыванию
     data = get_data_for_rating(data, report_type)
 
     rating = {}
