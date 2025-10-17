@@ -20,4 +20,7 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except Exception:
+        print("File's name must be like 'products1.csv'\nReport's name must be like 'average-report'")
