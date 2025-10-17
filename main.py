@@ -1,9 +1,9 @@
 from tabulate import tabulate
 
-from average_report_file import write_report_to_csv_file, read_report_from_csv_file
-from parser import parser
-from rating import average_rating
-from products import get_products_data
+from files.filereader import write_report_to_csv_file, read_report_from_csv_file
+from utils.parser import parser
+from utils.rating import average_rating
+from utils.products import get_products_data
 
 
 def main():
@@ -12,9 +12,9 @@ def main():
     report_type = data.report
 
     products_data = get_products_data(files) # словарь продуктов из всех файлов
-    aver_rating = average_rating(products_data) # средний рейтинг в виде словаря
-    write_report_to_csv_file(aver_rating) # запись в .csv, чтоб получить табличку
-    lst = read_report_from_csv_file('report.csv') # чтение рейтингов из файла
+    av_rating = average_rating(products_data, report_type) # средний рейтинг в виде словаря
+    write_report_to_csv_file(av_rating) # запись в .csv, чтоб получить красивую табличку
+    lst = read_report_from_csv_file('files/report/report.csv') # чтение рейтингов из файла
 
     print(tabulate(lst, headers="keys", tablefmt="grid"))
 
