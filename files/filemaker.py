@@ -1,7 +1,7 @@
 import csv
 
 
-with open('products1.csv', 'w', newline='') as csvfile:
+with open('files/products/products1.csv', 'w', newline='') as csvfile:
     fieldnames = ['name', 'brand', 'price', 'rating']
     writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
     writer.writeheader()
@@ -12,7 +12,7 @@ with open('products1.csv', 'w', newline='') as csvfile:
     writer.writerow({'name': 'galaxy a54', 'brand': 'samsung', 'price': '349', 'rating': '4.2'})
 
 
-with open('products2.csv', 'w', newline='') as csvfile:
+with open('files/products/products2.csv', 'w', newline='') as csvfile:
     fieldnames = ['name', 'brand', 'price', 'rating']
     writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
     writer.writeheader()

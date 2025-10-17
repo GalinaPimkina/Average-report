@@ -2,7 +2,8 @@ import csv
 
 
 def write_report_to_csv_file(data: dict):
-    with open('report.csv', 'w', newline='') as csvfile:
+    # запись данных в .csv файл, чтобы получить таблицу
+    with open('files/report/report.csv', 'w', newline='') as csvfile:
         fieldnames = ["", "brand", "rating"]
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
         writer.writeheader()
@@ -13,7 +14,8 @@ def write_report_to_csv_file(data: dict):
             i += 1
 
 
-def read_report_from_csv_file(file):
+def read_report_from_csv_file(file) -> list:
+    # из файла с таблицей получаем вложенный список с данными
     with open(file, newline='') as csvfile:
         lst = []
         reader = csv.DictReader(csvfile)
