@@ -25,6 +25,6 @@ def create_products2_file():
         writer.writerow({'name': 'iphone 13 mini', 'brand': 'apple', 'price': '599', 'rating': '4.5'})
 
 
-if __name__ == "main":
+if __name__ == "__main__":
     create_products1_file()
     create_products2_file()
