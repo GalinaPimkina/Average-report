@@ -23,4 +23,4 @@ if __name__ == "__main__":
     try:
         main()
     except Exception:
-        print("File's name must be like 'products1.csv'\nReport's name must be like 'average-report'")
+        print("Check file location.\nFile's name must be like 'products1.csv'\nReport's name must be like 'average-report'")
