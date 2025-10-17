@@ -1,7 +1,8 @@
 import csv
 
 
-def get_products_data(files: list):
+def get_products_data(files: list) -> dict:
+    # из списка файлов получаем словарь со всеми данными по каждому товару
     products_data = {}
 
     for d in files:

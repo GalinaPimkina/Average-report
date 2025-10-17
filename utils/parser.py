@@ -1,7 +1,7 @@
 import argparse
 
 
-def get_one_type(string):
+def get_one_type(string: str) -> str:
     return '_'.join([word for word in string.split('-')])
 
 
